@@ -81,7 +81,7 @@ namespace LocalJudge
             else if (!isNumeric(probemID.Text))
                 MessageBox.Show("Problem ID must be numeric", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             else if (!isNumeric(timeLimit.Text))
-                MessageBox.Show("Time limit must be numeric", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Time Limit must be numeric", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             else if (!dirExecute.Text.EndsWith(".exe"))
                 MessageBox.Show("Executable must end with .exe", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             else if (timeLimit.Text.CompareTo("10") <= 0)
