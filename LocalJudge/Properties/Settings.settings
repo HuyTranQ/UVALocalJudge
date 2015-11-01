@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LocalJudge.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FileExec" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileInput" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileOutput" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FileCorrect" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="colorAccepted" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#2e7d32</Value>
+    </Setting>
+    <Setting Name="colorIncorrect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#d50000</Value>
+    </Setting>
+    <Setting Name="colorRuntime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#3f51b5</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

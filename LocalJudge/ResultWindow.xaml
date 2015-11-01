@@ -1,0 +1,103 @@
+﻿<Window x:Class="LocalJudge.ResultWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalJudge"
+        mc:Ignorable="d"
+        Title="Program Output" 
+        Height="256" 
+        Width="320"
+        MinHeight="256"
+        MinWidth="320"
+        MaxHeight="256"
+        MaxWidth="320"
+        WindowStyle="ToolWindow"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition   Width="3*"/>
+            <ColumnDefinition   Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="56"/>
+            <RowDefinition  Height="56"/>
+            <RowDefinition  Height="56"/>
+            <RowDefinition  Height="56"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="0"
+                Grid.Row="0">
+            <TextBlock  x:Name="problemName"
+                        FontWeight="DemiBold"
+                        Text="Problem Name"
+                        TextWrapping="WrapWithOverflow"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Margin="16"/>
+        </Border>
+        <Label  x:Name="problemID"
+                Grid.Column="1"
+                Grid.Row="0"
+                Content="000000"
+                VerticalContentAlignment="Center"
+                HorizontalContentAlignment="Center"/>
+        <Label  Grid.Column="0"
+                Grid.Row="1"
+                Content="TIME Execution:"
+                VerticalContentAlignment="Center"
+                HorizontalAlignment="Right"
+                Margin="0,0,32,0"
+                FontWeight="DemiBold"
+                FontSize="16"/>
+        <Label  x:Name="timeExec"
+                Grid.Row="1"
+                Grid.Column="1"
+                Content="-----s"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="20"
+                Foreground="#3f51b5"/>
+        <Label  Grid.Row="2"
+                Grid.Column="0"
+                Content="Program OUTPUT:"
+                Margin="0,0,32,0"
+                HorizontalContentAlignment="Right"
+                VerticalContentAlignment="Center"
+                FontWeight="DemiBold"
+                FontSize="16"/>
+        <Label  x:Name="accepted"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Content="ACCEPTED"
+                FontWeight="DemiBold"
+                FontSize="20"
+                Visibility="Hidden"
+                Foreground="#2e7d32"/>
+        <Label  x:Name="incorrect"
+                Grid.Row="2"
+                Grid.Column="1"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Content="INCORRECT"
+                FontWeight="DemiBold"
+                FontSize="20"
+                Foreground="#d50000"
+                Visibility="Hidden"/>
+        <Border Grid.Row="2"
+                Grid.Column="1">
+            <TextBlock  x:Name="runtime"
+                        Text="RUN-TIME /
+                              TIME-LIMIT"
+                        TextWrapping="WrapWithOverflow"
+                        FontWeight="DemiBold"
+                        FontSize="18"
+                        Foreground="#795548"
+                        Visibility="Hidden"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"/>
+        </Border>
+        
+    </Grid>
+</Window>
