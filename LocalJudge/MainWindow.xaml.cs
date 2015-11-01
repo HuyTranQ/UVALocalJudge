@@ -85,7 +85,7 @@ namespace LocalJudge
             else if (!dirExecute.Text.EndsWith(".exe"))
                 MessageBox.Show("Executable must end with .exe", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             else if (timeLimit.Text.CompareTo("10") <= 0)
-                MessageBox.Show("Time limit must be < 10", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Time Limit must be < 10", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             else if (!File.Exists(Properties.Settings.Default.FileExec))
                 MessageBox.Show("Executable not found!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             else if (!File.Exists(Properties.Settings.Default.FileInput))
